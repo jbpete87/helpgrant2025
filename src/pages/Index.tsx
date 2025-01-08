@@ -115,8 +115,8 @@ const Index = () => {
             <img
               src="/lovable-uploads/3f2c80c8-f63c-4287-8d8b-c9ed4a200950.png"
               alt="Cornerstone Home Lending Logo"
-              className="h-12"
-              width="180"
+              className="h-12 w-12 object-contain"
+              width="48"
               height="48"
             />
             <p className="text-sm text-center md:text-left max-w-3xl">
