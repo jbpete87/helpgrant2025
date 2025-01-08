@@ -123,8 +123,20 @@ const Index = () => {
               *The Homebuyer Equity Leverage Partnership (HELP) program, launched January 2, 2025, offers first-come, first-served forgivable grants of up to $20,000 in AR, LA, MS, and other states in which Cornerstone is registered. Household income limits, 5-year home retention agreement, and other requirements apply; see loan officer for details. NMLS #2258. Not a commitment to lend.
             </p>
             <div className="flex gap-4">
-              <img src="/member-fdic.png" alt="Member FDIC" className="h-8" width="80" height="32" />
-              <img src="/equal-housing-lender.png" alt="Equal Housing Lender" className="h-8" width="80" height="32" />
+              <img 
+                src="https://www.liblogo.com/img-logo/fd6307fb46-fdic-logo-fdic-member-logo-vector-in-eps-ai-cdr-free-download.png" 
+                alt="Member FDIC" 
+                className="h-8" 
+                width="80" 
+                height="32" 
+              />
+              <img 
+                src="https://www.pngkey.com/png/detail/252-2523557_equal-housing-lender-member-fdic-equal-housing-opportunity.png" 
+                alt="Equal Housing Lender" 
+                className="h-8" 
+                width="80" 
+                height="32" 
+              />
             </div>
           </div>
         </div>
