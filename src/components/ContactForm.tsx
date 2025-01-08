@@ -20,16 +20,16 @@ export const ContactForm = () => {
 
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID', // You'll need to replace this
-        'YOUR_TEMPLATE_ID', // You'll need to replace this
+        'YOUR_SERVICE_ID', service_wny424s
+        'YOUR_TEMPLATE_ID', template_pkzmawe
         {
-          to_email: 'your-email@example.com', // Replace with your email
+          to_email: 'jake@thetimhawkesteam.com', // Replace with your email
           from_name: formData.name,
           from_email: formData.email,
           phone: formData.phone,
           message: `New HELP Grant Inquiry from ${formData.name}`,
         },
-        'YOUR_PUBLIC_KEY' // You'll need to replace this
+        'YOUR_PUBLIC_KEY' Uj8SmT3R-w-OqNWQx
       );
 
       toast({
