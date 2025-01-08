@@ -20,8 +20,8 @@ export const ContactForm = () => {
 
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID', service_wny424s
-        'YOUR_TEMPLATE_ID', template_pkzmawe
+        'YOUR_SERVICE_ID', "service_wny424s"
+        'YOUR_TEMPLATE_ID', "template_pkzmawe"
         {
           to_email: 'jake@thetimhawkesteam.com', // Replace with your email
           from_name: formData.name,
@@ -29,7 +29,7 @@ export const ContactForm = () => {
           phone: formData.phone,
           message: `New HELP Grant Inquiry from ${formData.name}`,
         },
-        'YOUR_PUBLIC_KEY' Uj8SmT3R-w-OqNWQx
+        'YOUR_PUBLIC_KEY' "Uj8SmT3R-w-OqNWQx"
       );
 
       toast({
