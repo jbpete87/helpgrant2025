@@ -115,9 +115,9 @@ const Index = () => {
             <img
               src="/lovable-uploads/3f2c80c8-f63c-4287-8d8b-c9ed4a200950.png"
               alt="Cornerstone Home Lending Logo"
-              className="h-12 w-12 object-contain"
-              width="48"
-              height="48"
+              className="h-16 w-16 object-contain"
+              width="64"
+              height="64"
             />
             <p className="text-sm text-center md:text-left max-w-3xl">
               *The Homebuyer Equity Leverage Partnership (HELP) program, launched January 2, 2025, offers first-come, first-served forgivable grants of up to $20,000 in AR, LA, MS, and other states in which Cornerstone is registered. Household income limits, 5-year home retention agreement, and other requirements apply; see loan officer for details. NMLS #2258. Not a commitment to lend.
