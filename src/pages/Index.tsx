@@ -126,16 +126,16 @@ const Index = () => {
               <img 
                 src="https://www.liblogo.com/img-logo/fd6307fb46-fdic-logo-fdic-member-logo-vector-in-eps-ai-cdr-free-download.png" 
                 alt="Member FDIC" 
-                className="h-8 w-8 object-contain" 
-                width="32" 
-                height="32" 
+                className="h-16 w-16 object-contain" 
+                width="64" 
+                height="64" 
               />
               <img 
                 src="https://banner2.cleanpng.com/20180830/tph/kisspng-logo-equal-housing-lender-vector-graphics-loan-por-logo-equal-housing-lender-vector-cdr-amp-png-hd-1713946387459.webp" 
                 alt="Equal Housing Lender" 
-                className="h-8 w-8 object-contain" 
-                width="32" 
-                height="32" 
+                className="h-16 w-16 object-contain" 
+                width="64" 
+                height="64" 
               />
             </div>
           </div>
