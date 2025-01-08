@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
+import emailjs from '@emailjs/browser';
 
 export const ContactForm = () => {
   const { toast } = useToast();
@@ -11,14 +12,40 @@ export const ContactForm = () => {
     email: "",
     phone: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Thanks for your interest!",
-      description: "A representative will contact you soon about the HELP Grant.",
-    });
-    setFormData({ name: "", email: "", phone: "" });
+    setIsSubmitting(true);
+
+    try {
+      await emailjs.send(
+        'YOUR_SERVICE_ID', // You'll need to replace this
+        'YOUR_TEMPLATE_ID', // You'll need to replace this
+        {
+          to_email: 'your-email@example.com', // Replace with your email
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          message: `New HELP Grant Inquiry from ${formData.name}`,
+        },
+        'YOUR_PUBLIC_KEY' // You'll need to replace this
+      );
+
+      toast({
+        title: "Thanks for your interest!",
+        description: "A representative will contact you soon about the HELP Grant.",
+      });
+      setFormData({ name: "", email: "", phone: "" });
+    } catch (error) {
+      toast({
+        title: "Something went wrong",
+        description: "Please try again later or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -55,8 +82,12 @@ export const ContactForm = () => {
           className="mt-1"
         />
       </div>
-      <Button type="submit" className="w-full bg-help-blue hover:bg-help-navy">
-        Get Started Today
+      <Button 
+        type="submit" 
+        className="w-full bg-help-blue hover:bg-help-navy"
+        disabled={isSubmitting}
+      >
+        {isSubmitting ? "Sending..." : "Get Started Today"}
       </Button>
     </form>
   );
