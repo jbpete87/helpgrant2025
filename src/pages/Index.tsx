@@ -113,7 +113,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <img
-              src="/lovable-uploads/3f2c80c8-f63c-4287-8d8b-c9ed4a200950.png"
+              src="https://www.houseloan.com/media/1f0cbbuq/chl-logo-horz.svg"
               alt="Cornerstone Home Lending Logo"
               className="h-16 w-16 object-contain"
               width="64"
