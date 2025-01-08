@@ -28,6 +28,7 @@ export default {
           navy: "#003366",
           blue: "#0077CC",
           gray: "#F5F5F5",
+          green: "#8AB833",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -57,6 +58,9 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      fontFamily: {
+        script: ["cursive"],
       },
       borderRadius: {
         lg: "var(--radius)",
