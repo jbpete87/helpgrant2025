@@ -124,7 +124,7 @@ const Index = () => {
             </p>
             <div className="flex gap-4">
               <img 
-                src="https://www.liblogo.com/img-logo/fd6307fb46-fdic-logo-fdic-member-logo-vector-in-eps-ai-cdr-free-download.png" 
+                src="https://cdn.worldvectorlogo.com/logos/fdic-member.svg" 
                 alt="Member FDIC" 
                 className="h-16 w-16 object-contain" 
                 width="64" 
