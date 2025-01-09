@@ -91,8 +91,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section aria-label="Contact Form" className="py-20 bg-help-gray">
+      {/* Contact Section - Reduced top padding from py-20 to py-8 */}
+      <section aria-label="Contact Form" className="py-8 bg-help-gray">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-xl p-8">
             <h2 className="text-3xl font-bold mb-4 text-help-navy text-center">
